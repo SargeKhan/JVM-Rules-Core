@@ -5,6 +5,7 @@ import com.jvmrules.exceptions.IllegalPropertyException;
 import com.jvmrules.exceptions.IllegalPropertyValueException;
 import com.jvmrules.expression.Expression;
 import com.jvmrules.expression.NamedExpression;
+import com.jvmrules.util.ValueDataType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,14 +41,14 @@ public class VeriableType {
     }
 
 
-    public static VariableExpression getVariableType(NamedExpression namedExpression, Map<String, ?> bindings) throws IllegalPropertyValueException{
+    public static VariableExpression getVariableType(NamedExpression namedExpression, Map<String, ?> bindings) throws IllegalPropertyValueException {
 
         Object object = bindings.get(namedExpression.getName());
         if (object == null)
             return null;
 
         String value = (String) object;
-        Class type = computeType(value);
+        Class type = ValueDataType.computeType(value);
 
 
         if (type.equals(BooleanVeriable.class)) {
@@ -110,25 +111,6 @@ public class VeriableType {
         return variable;
     }
 
-    private static Class computeType(String value) {
-        if ("true".equals(value) || "false".equals(value))
-            return BooleanVeriable.class;
-        else if (value.startsWith("'"))
-            return StringVeriable.class;
-        else if (value.contains(".")) {
-            try {
-                return FloatVeriable.class;
-            } catch (NumberFormatException e) {
-            }
-        } else {
-            try {
-                return IntegerVeriable.class;
-            } catch (NumberFormatException e) {
-            }
-        }
-
-        return StringVeriable.class;
-    }
 
 
 }

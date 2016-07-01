@@ -7,29 +7,29 @@ JVM Rules API has two parts one is Rule Registry and other is Rule Evaluator. Ru
 
 ### DataTypes Syntax
 
-| Value Expression      | String    | Integer   | Float     | Boolean       |
-| -----------------     | --------- | --------- | --------- | ------------- |
-| Primitive             |    'A'    |    4      |    4.2    | true,false    |
-| List                  | {'A','B'} |   {2,5}   | {3.1,5.5} | {true,false}  |
+| Value Expression      | String    | Integer   | Float     | Boolean       | Regex           | Date                           | DateTime                                        |
+| -----------------     | --------- | --------- | --------- | ------------- | ----------------|------------------------------- | ----------------------------------------------- |
+| Type                  |    'A'    |    4      |    4.2    | true,false    |  [R'*']         |[15-01-12016]                   | [15-01-12016 10:20:56]                          |
+| List                  | {'A','B'} |   {2,5}   | {3.1,5.5} | {true,false}  | {[R'*'],[R'*']} | {[15-01-2016],[20-02-2016]}    | {[15-01-12016 15:20:56],[20-02-12016 23:20:56]} |
 
 
 ### Supported Operations
 JVM Rules supports all common used operations bellow table explain about operations
 
-| Operation Name    | Syntax                             | DataTypes                          |Value Expression      |
-| ----------------- | ---------------------------------- | ---------------------------------- | -------------------- |
-| EQUAL             |  Equal, equal, =                   | Integer, Float, String, Boolean    | Primitive            |
-| NOT EQUAL         | NotEqual, "notequal, !=, <>        | Integer, Float , String, Boolean   | Primitive            |
-| LESS              | Less, less, <                      | Integer, Float String              | Primitive            |
-| LESS EQUAL        | LessEqual, lessequal, <=           | Integer, Float, String             | Primitive            |
-| GERATER           | Greater, greater, >                | Integer, Float, String             | Primitive            |
-| GERATER EQUAL     | GreaterEqual, greaterequal, >=     | Integer, Float, String             | Primitive            |
-| INL               | IN,In ,in                          | Integer, Float, String, Boolean    | List                 |
-| BETWEENL          | Between, between                   | Integer, Float                     | List {size=2}        |
-| AND               | AND, And, and                      | Boolean                            | Expression           |
-| OR                | OR, Or, or                         | Boolean                            | Expression           |
-| IMPLIES           | Implies, implies, =>               | Boolean                            | Expression           |
-| NOT               | NOT, Not, not                      | Boolean                            | Expression           |
+| Operation Name    | Syntax                             | DataTypes                                              |Value Expression    |
+| ----------------- | ---------------------------------- | ------------------------------------------------------ | ------------------ |
+| EQUAL             |  Equal, equal, =                   | Integer, Float, String, Boolean, Regex, Date, DateTime | Type               |
+| NOT EQUAL         | NotEqual, "notequal, !=, <>        | Integer, Float, String, Boolean, Regex, Date, DateTime | Type               |
+| LESS              | Less, less, <                      | Integer, Float, String, Date, DateTime                 | Type               |
+| LESS EQUAL        | LessEqual, lessequal, <=           | Integer, Float, String, Date, DateTime                 | Type               |
+| GERATER           | Greater, greater, >                | Integer, Float, String, Date, DateTime                 | Type               |
+| GERATER EQUAL     | GreaterEqual, greaterequal, >=     | Integer, Float, String, Date, DateTime                 | Type               |
+| INL               | IN,In ,in                          | Integer, Float, String, Boolean,Regex, Date, DateTime  | List               |
+| BETWEENL          | Between, between                   | Integer, Float, Date, DateTime                         | List {size=2}      |
+| AND               | AND, And, and                      | Boolean                                                | Type               |
+| OR                | OR, Or, or                         | Boolean                                                | Type               |
+| IMPLIES           | Implies, implies, =>               | Boolean                                                | Type               |
+| NOT               | NOT, Not, not                      | Boolean                                                | Type               |
 
 ### Basic Syntax
 
