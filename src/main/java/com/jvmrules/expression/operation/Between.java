@@ -8,16 +8,10 @@ import com.jvmrules.expression.NamedExpression;
 import com.jvmrules.expression.Operation;
 import com.jvmrules.expression.value.ValueExpression;
 import com.jvmrules.expression.value.ValueType;
-import com.jvmrules.expression.veriable.FloatVeriable;
-import com.jvmrules.expression.veriable.IntegerVeriable;
-import com.jvmrules.expression.veriable.VariableExpression;
-import com.jvmrules.expression.veriable.VeriableType;
+import com.jvmrules.expression.veriable.*;
 import com.jvmrules.util.TokenString;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.Stack;
+import java.util.*;
 
 
 public class Between extends OperationExpression implements Operation {
@@ -44,7 +38,7 @@ public class Between extends OperationExpression implements Operation {
             this.rightOperand = right;
 
 
-            if (right.getType().equals(IntegerVeriable.class) && right.getType().equals(IntegerVeriable.class)) {
+            if (right.getType().equals(IntegerVeriable.class) || right.getType().equals(FloatVeriable.class)||right.getType().equals(DateTimeVeriable.class)||right.getType().equals(DateVeriable.class)) {
 
                 if (right != null || (right.getValue() instanceof Collection)) {
 
@@ -121,6 +115,14 @@ public class Between extends OperationExpression implements Operation {
                 Float upper=values.get(1);
 
                 if (lower <= left && left <= upper  ) {
+                    return true;
+                }
+            }else if (variable.getType().equals(DateTimeVeriable.class)||variable.getType().equals(DateVeriable.class)) {
+                Date left = (Date) variable.getValue();
+                List<Date> values= (List<Date>) type.getValue();
+                Date lower=values.get(0);
+                Date upper=values.get(1);
+                if (lower.compareTo(left)<=0 && left .compareTo(upper )<= 0 ) {
                     return true;
                 }
             }

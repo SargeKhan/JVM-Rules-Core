@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class InOperationTest extends TestCase {
+public class EqualOperationTest extends TestCase {
     @Test
     public void testApp() throws ExpressionParseException {
 
@@ -33,7 +33,7 @@ public class InOperationTest extends TestCase {
         types.put("V6", DateTimeVeriable.class);
         types.put("V7", RegexVeriable.class);
 
-        String exp="V1 in {'A','B'} And V2 in {2,3} And V3 = {3.1,3.2} And V4 in {true,false} And V5 in {[12-05-2016],[13-05-2016]} And V6 in {[12-05-2016-15:30:00],[13-05-2016-15:30:00]} And V7 in {[R'B1.*'],[R'A1.*']}";
+        String exp="V1 = 'A' And V2 = 2 And V3 = 3.2 And V4 = false And V5 = [12-05-2016] And V6 = [12-05-2016-15:30:00] And V7 = [R'A1.*']";
 
         Expression expression = ExpressionParser.fromString(exp, types);
 

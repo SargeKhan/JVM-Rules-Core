@@ -12,6 +12,7 @@ import com.jvmrules.expression.veriable.*;
 import com.jvmrules.util.TokenString;
 import com.jvmrules.util.TrimString;
 
+import java.util.Date;
 import java.util.Map;
 import java.util.Stack;
 
@@ -41,7 +42,7 @@ public class Greater extends OperationExpression implements Operation {
 
 
 
-            if (!right.getType().equals(IntegerVeriable.class) && !right.getType().equals(IntegerVeriable.class) &&!right.getType().equals(StringVeriable.class))
+            if (!right.getType().equals(IntegerVeriable.class) && !right.getType().equals(FloatVeriable.class) &&!right.getType().equals(StringVeriable.class)&&!right.getType().equals(DateTimeVeriable.class)&&!right.getType().equals(DateVeriable.class))
             {
                 String message = String.format("Operation %s not possible on type %s at %s",this.getClass().getSimpleName(),right.getType().getClass().getSimpleName(), TokenString.tokenToString(tokens,pos));
                 logger.error(message);
@@ -72,33 +73,39 @@ public class Greater extends OperationExpression implements Operation {
         if (variable == null)
             return false;
 
-        ValueExpression<?> type = (ValueExpression<?>) this.rightOperand;
+        ValueExpression<?> valueExpression = (ValueExpression<?>) this.rightOperand;
 
-        if (variable.getType().equals(type.getType())) {
+
 
 
             if (variable.getType().equals(StringVeriable.class)) {
                 String left = TrimString.trim((String) variable.getValue());
-                String right = TrimString.trim((String) type.getValue());
+                String right = TrimString.trim((String) valueExpression.getValue());
                 if (left.length()>right.length()) {
                     return true;
                 }
             } else if (variable.getType().equals(IntegerVeriable.class)) {
                 Integer left = (Integer) variable.getValue();
-                Integer right = (Integer) type.getValue();
+                Integer right = (Integer) valueExpression.getValue();
                 if (left>right) {
                     return true;
                 }
             } else if (variable.getType().equals(FloatVeriable.class)) {
                 Float left = (Float) variable.getValue();
-                Float right = (Float) type.getValue();
+                Float right = (Float) valueExpression.getValue();
                 if (left>right) {
+                    return true;
+                }
+            } else if (variable.getType().equals(DateTimeVeriable.class)||variable.getType().equals(DateVeriable.class)) {
+                Date left = (Date) variable.getValue();
+                Date right = (Date) valueExpression.getValue();
+                if (left.compareTo(right)>0) {
                     return true;
                 }
             }
 
 
-        }
+
         return false;
     }
 

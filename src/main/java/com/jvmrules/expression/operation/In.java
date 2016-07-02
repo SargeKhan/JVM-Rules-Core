@@ -12,14 +12,11 @@ import com.jvmrules.expression.veriable.*;
 import com.jvmrules.util.TokenString;
 import com.jvmrules.util.TrimString;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
-import java.util.Stack;
+import java.util.*;
 
 public class In extends OperationExpression implements Operation {
     public In() {
-        super("IN","In","in");
+        super("IN", "In", "in");
     }
 
     public In copy() {
@@ -34,10 +31,9 @@ public class In extends OperationExpression implements Operation {
             Expression left = VeriableType.getVariableType(variableName, types);
             ValueExpression right = ValueType.getValueType(tokens[pos + 1], variableName, types);
 
-            if (right==null || !(right.getValue() instanceof Collection))
-            {
+            if (right == null || !(right.getValue() instanceof Collection)) {
 
-                String message = String.format("List Operation %s not possible on type %s at %s",this.getClass().getSimpleName(),right.getValue().getClass().getSimpleName(), TokenString.tokenToString(tokens,pos));
+                String message = String.format("List Operation %s not possible on type %s at %s", this.getClass().getSimpleName(), right.getValue().getClass().getSimpleName(), TokenString.tokenToString(tokens, pos));
                 logger.error(message);
                 throw new IllegalOperationException(message);
 
@@ -71,48 +67,65 @@ public class In extends OperationExpression implements Operation {
         if (variable == null)
             return false;
 
-        ValueExpression<?> type = (ValueExpression<?>) this.rightOperand;
+        ValueExpression<?> valueExpression = (ValueExpression<?>) this.rightOperand;
 
-        if (variable.getType().equals(type.getType())) {
 
 
             if (variable.getType().equals(StringVeriable.class)) {
                 String left = TrimString.trim((String) variable.getValue());
-                List<String> values= (List<String>) type.getValue();
-                for (String value: values  ) {
+                List<String> values = (List<String>) valueExpression.getValue();
+                for (String value : values) {
                     String right = TrimString.trim(value);
-                    if (left.equals(right)) {
-                        return true;
+
+                    if (valueExpression.getType().equals(StringVeriable.class)) {
+
+                        if (left.equals(right)) {
+                            return true;
+                        }
+                    } else if (valueExpression.getType().equals(RegexVeriable.class)) {
+                        if (left.matches(right)) {
+                            return true;
+                        }
                     }
+
+
                 }
             } else if (variable.getType().equals(IntegerVeriable.class)) {
                 Integer left = (Integer) variable.getValue();
-                List<Integer> values= (List<Integer>) type.getValue();
-                for (Integer right: values  ) {
+                List<Integer> values = (List<Integer>) valueExpression.getValue();
+                for (Integer right : values) {
                     if (left.equals(right)) {
                         return true;
                     }
                 }
             } else if (variable.getType().equals(FloatVeriable.class)) {
                 Float left = (Float) variable.getValue();
-                List<Float> values= (List<Float>) type.getValue();
-                for (Float right: values  ) {
+                List<Float> values = (List<Float>) valueExpression.getValue();
+                for (Float right : values) {
                     if (left.equals(right)) {
                         return true;
                     }
                 }
             } else if (variable.getType().equals(BooleanVeriable.class)) {
                 Boolean left = (Boolean) variable.getValue();
-                List<Boolean> values= (List<Boolean>) type.getValue();
-                for (Boolean right: values  ) {
+                List<Boolean> values = (List<Boolean>) valueExpression.getValue();
+                for (Boolean right : values) {
                     if (left.equals(right)) {
                         return true;
                     }
                 }
+            } else if (variable.getType().equals(DateTimeVeriable.class) || variable.getType().equals(DateVeriable.class)) {
+                Date left = (Date) variable.getValue();
+                List<Date> values = (List<Date>) valueExpression.getValue();
+                for (Date right : values) {
+                    if (left.compareTo(right) == 0) {
+                        return true;
+                    }
+                }
+
             }
+            
 
-
-        }
         return false;
     }
 

@@ -1,6 +1,8 @@
 package com.jvmrules.expression.veriable;
 
 
+import java.util.Date;
+
 public class DateTimeVeriable extends VariableExpression {
 
     public DateTimeVeriable(String name) {
@@ -13,8 +15,8 @@ public class DateTimeVeriable extends VariableExpression {
 
 
     @Override
-    public String getValue() {
-        return (String) value;
+    public Date getValue() {
+        return (Date) value;
     }
 
     @Override

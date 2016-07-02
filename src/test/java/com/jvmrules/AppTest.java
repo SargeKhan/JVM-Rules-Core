@@ -1,15 +1,14 @@
 package com.jvmrules;
 
-import com.jvmrules.test.ListValueTest;
-import com.jvmrules.test.ParenthesisTest;
+import com.jvmrules.test.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-        ParenthesisTest.class,
-        ListValueTest.class })
+        EqualOperationTest.class,
+        NotEqualOperationTest.class, InOperationTest.class})
 public class AppTest {
 
 }
