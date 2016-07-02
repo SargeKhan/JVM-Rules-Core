@@ -18,20 +18,15 @@ public class ValueType {
     static SimpleDateFormat dateTimeFormat = new SimpleDateFormat("dd-MM-yyyy-HH:mm:ss");
     static SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
 
-    public static ValueExpression<?> getValueType(String valueString, String name, Map<String, Class> types) throws IllegalValueException {
+    public static ValueExpression<?> getValueType(String valueString, String name, Class type) throws IllegalValueException {
         if (valueString == null)
             throw new IllegalValueException("The provided string must not be null");
 
-        Class type = null;
 
-        if (name != null && !name.isEmpty() && types.get(name) != null) {
-            type = types.get(name);
             if (valueString.startsWith("[R") && valueString.endsWith("]")) {
                 type = RegexVeriable.class;
             }
-        } else {
-            type = ValueDataType.computeType(valueString);
-        }
+
 
         ValueExpression valueExpression = null;
 
@@ -84,11 +79,11 @@ public class ValueType {
                     }
                     valueExpression = new ValueExpression<List<String>>(list, StringVeriable.class);
 
-                }else if (type.equals(RegexVeriable.class)) {
+                } else if (type.equals(RegexVeriable.class)) {
 
                     List<String> list = new ArrayList<>();
                     for (String value : values) {
-                         value = value.substring(2, value.length() - 1).trim();
+                        value = value.substring(2, value.length() - 1).trim();
                         list.add(value);
                     }
                     valueExpression = new ValueExpression<List<String>>(list, RegexVeriable.class);
@@ -179,7 +174,7 @@ public class ValueType {
                 valueExpression = new ValueExpression<Date>(date, DateVeriable.class);
             } else if (type.equals(DateTimeVeriable.class)) {
                 String value = valueString.substring(1, valueString.length() - 1).trim();
-               Date date = null;
+                Date date = null;
                 try {
                     date = dateTimeFormat.parse(value);
                 } catch (ParseException e) {

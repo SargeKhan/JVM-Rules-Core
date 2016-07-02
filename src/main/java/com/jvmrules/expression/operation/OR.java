@@ -1,13 +1,12 @@
 package com.jvmrules.expression.operation;
 
 import com.jvmrules.exceptions.InterpretException;
-import com.jvmrules.expression.Operation;
 
 import java.util.Map;
 
-public class OR extends OperationExpression implements Operation {
+public class OR extends OperationExpression {
     public OR() {
-        super("OR","or","||");
+        super("OR", "or", "||");
     }
 
     public OR copy() {

@@ -2,13 +2,12 @@ package com.jvmrules.expression.operation;
 
 import com.jvmrules.exceptions.ExpressionParseException;
 import com.jvmrules.expression.Expression;
-import com.jvmrules.expression.Operation;
 import com.jvmrules.operations.Operations;
 
 import java.util.Map;
 import java.util.Stack;
 
-public class LeftParentheses extends OperationExpression implements Operation {
+public class LeftParentheses extends OperationExpression {
     public LeftParentheses() {
         super("(");
     }
@@ -19,7 +18,7 @@ public class LeftParentheses extends OperationExpression implements Operation {
 
 
     @Override
-    public int parse(String[] tokens, int pos, Stack<Expression> stack, Map<String, Class> types) throws ExpressionParseException{
+    public int parse(String[] tokens, int pos, Stack<Expression> stack, Map<String, Class> types) throws ExpressionParseException {
 
         int i = findNextExpression(tokens, pos + 1, stack, types);
 

@@ -29,7 +29,7 @@ public class NotEqualOperationTest extends TestCase {
         types.put("V6", DateTimeVeriable.class);
         types.put("V7", RegexVeriable.class);
 
-        String exp="V1 != 'A' And V2 != 2 And V3 != 3.2 And V4 != false And V5 != [12-05-2016] And V6 != [12-05-2016-15:30:00] And V7 != [R'A1.*']";
+        String exp = "V1 != 'A' And V2 != 2 And V3 != 3.2 And V4 != false And V5 != [12-05-2016] And V6 != [12-05-2016-15:30:00] And V7 != [R'A1.*']";
 
         Expression expression = ExpressionParser.fromString(exp, types);
 
@@ -45,7 +45,7 @@ public class NotEqualOperationTest extends TestCase {
         bindings.put("V7", "A2B2");
 
         RuleEvaluator evaluator = factory.Evaluator;
-        HashMap<Expression,Boolean> results = evaluator.evaluate(rules, bindings);
+        HashMap<Expression, Boolean> results = evaluator.evaluate(rules, bindings);
 
         boolean triggered = results.get(expression);
 

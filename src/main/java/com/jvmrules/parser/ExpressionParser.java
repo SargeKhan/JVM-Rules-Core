@@ -2,7 +2,7 @@ package com.jvmrules.parser;
 
 import com.jvmrules.exceptions.ExpressionParseException;
 import com.jvmrules.expression.Expression;
-import com.jvmrules.expression.Operation;
+import com.jvmrules.expression.operation.Operation;
 import com.jvmrules.operations.Operations;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,10 +13,8 @@ import java.util.Stack;
 
 public class ExpressionParser {
 
-    static Logger logger = LoggerFactory.getLogger(ExpressionParser.class);
-
     private static final Operations operations = Operations.INSTANCE;
-
+    static Logger logger = LoggerFactory.getLogger(ExpressionParser.class);
 
     public static Expression fromString(String expr, Map<String, Class> types) throws ExpressionParseException {
 

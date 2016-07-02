@@ -1,15 +1,11 @@
 package com.jvmrules.test;
 
-import com.jvmrules.action.ActionDispatcher;
-import com.jvmrules.action.NullActionDispatcher;
 import com.jvmrules.api.RuleFactory;
 import com.jvmrules.exceptions.ExpressionParseException;
 import com.jvmrules.expression.Expression;
 import com.jvmrules.expression.veriable.*;
 import com.jvmrules.parser.ExpressionParser;
-import com.jvmrules.rule.Rule;
 import com.jvmrules.rule.RuleRegistry;
-import com.jvmrules.rule.builder.RuleBuilder;
 import com.jvmrules.rule.evaluator.RuleEvaluator;
 import junit.framework.TestCase;
 import org.junit.Test;
@@ -33,7 +29,7 @@ public class EqualOperationTest extends TestCase {
         types.put("V6", DateTimeVeriable.class);
         types.put("V7", RegexVeriable.class);
 
-        String exp="V1 = 'A' And V2 = 2 And V3 = 3.2 And V4 = false And V5 = [12-05-2016] And V6 = [12-05-2016-15:30:00] And V7 = [R'A1.*']";
+        String exp = "V1 = 'A' And V2 = 2 And V3 = 3.2 And V4 = false And V5 = [12-05-2016] And V6 = [12-05-2016-15:30:00] And V7 = [R'A1.*']";
 
         Expression expression = ExpressionParser.fromString(exp, types);
 
@@ -49,7 +45,7 @@ public class EqualOperationTest extends TestCase {
         bindings.put("V7", "A1B2");
 
         RuleEvaluator evaluator = factory.Evaluator;
-        HashMap<Expression,Boolean> results = evaluator.evaluate(rules, bindings);
+        HashMap<Expression, Boolean> results = evaluator.evaluate(rules, bindings);
 
         boolean triggered = results.get(expression);
 

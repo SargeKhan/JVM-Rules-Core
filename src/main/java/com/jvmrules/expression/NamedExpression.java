@@ -3,7 +3,7 @@ package com.jvmrules.expression;
 
 import java.util.Map;
 
-public class NamedExpression implements Expression {
+public class NamedExpression extends Expression {
     private String name;
 
     public NamedExpression(String name) {

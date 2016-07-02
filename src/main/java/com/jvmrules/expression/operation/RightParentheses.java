@@ -1,8 +1,6 @@
 package com.jvmrules.expression.operation;
 
-import com.jvmrules.expression.Operation;
-
-public class RightParentheses extends OperationExpression implements Operation {
+public class RightParentheses extends OperationExpression {
     public RightParentheses() {
         super(")");
     }

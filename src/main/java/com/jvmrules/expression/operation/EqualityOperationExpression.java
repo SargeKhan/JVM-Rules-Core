@@ -2,7 +2,9 @@ package com.jvmrules.expression.operation;
 
 import com.jvmrules.exceptions.ExpressionParseException;
 import com.jvmrules.exceptions.IllegalOperationException;
+import com.jvmrules.exceptions.InterpretException;
 import com.jvmrules.expression.Expression;
+import com.jvmrules.expression.NamedExpression;
 import com.jvmrules.expression.value.ValueExpression;
 import com.jvmrules.expression.value.ValueType;
 import com.jvmrules.expression.veriable.VariableExpression;
@@ -10,20 +12,25 @@ import com.jvmrules.expression.veriable.VeriableType;
 import com.jvmrules.util.TokenString;
 import com.jvmrules.util.ValueDataType;
 
-import java.util.Collection;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 import java.util.Stack;
 
+public abstract class EqualityOperationExpression extends OperationExpression {
 
-public class Between extends EqualityOperationExpression {
-    public Between() {
-        super("Between", "between");
+
+    public EqualityOperationExpression(String symbol) {
+        this.symbols.add(symbol);
     }
 
-    public Between copy() {
-        return new Between();
+    public EqualityOperationExpression(List<String> symbols) {
+        this.symbols.addAll(symbols);
     }
 
+    public EqualityOperationExpression(String... symbols) {
+        this.symbols.addAll(Arrays.asList(symbols));
+    }
 
     @Override
     public int parse(final String[] tokens, int pos, Stack<Expression> stack, Map<String, Class> types) throws ExpressionParseException {
@@ -44,22 +51,7 @@ public class Between extends EqualityOperationExpression {
             this.rightOperand = right;
 
 
-            if (left.isLegalOperations(this.getClass())) {
-                if (right != null || (right.getValue() instanceof Collection)) {
-                    if (((Collection) right.getValue()).size() != 2) {
-
-                        String message = String.format("Operation %s required 2 values", this.getClass().getSimpleName());
-                        logger.error(message);
-                        throw new IllegalOperationException(message);
-                    }
-
-                } else {
-                    String message = String.format("List Operation %s not possible on type %s at %s", this.getClass().getSimpleName(), right.getValue().getClass().getSimpleName(), TokenString.tokenToString(tokens, pos));
-                    logger.error(message);
-                    throw new IllegalOperationException(message);
-
-                }
-            } else {
+            if (!left.isLegalOperations(this.getClass())) {
                 String message = String.format("Operation %s not possible on type %s at %s", this.getClass().getSimpleName(), right.getType().getClass().getSimpleName(), TokenString.tokenToString(tokens, pos));
                 logger.error(message);
                 throw new IllegalOperationException(message);
@@ -73,4 +65,20 @@ public class Between extends EqualityOperationExpression {
         throw new ExpressionParseException("Cannot assign value to variable");
     }
 
+    public boolean interpret(Map<String, ?> bindings) throws InterpretException {
+        VariableExpression variable = null;
+
+        if (this.leftOperand instanceof NamedExpression) {
+            variable = VeriableType.getVariableType((NamedExpression) this.leftOperand, bindings);
+        } else if (this.leftOperand instanceof VariableExpression) {
+            variable = (VariableExpression) this.leftOperand;
+            variable = VeriableType.setVeriableValue(variable, bindings);
+        }
+
+        if (variable == null)
+            return false;
+
+        ValueExpression<?> valueExpression = (ValueExpression<?>) this.rightOperand;
+        return variable.interpret(this, valueExpression);
+    }
 }

@@ -2,30 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9caa603-691b-40bd-9ec7-faee22d8ff52" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/jvmrules/test/BetweenOperationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/jvmrules/test/EqualOperationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/jvmrules/test/NotEqualOperationTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/jvmrules/test/EqualityOperationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/jvmrules/test/ListValueTest.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/EqualityOperationExpression.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Operation.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/Operation.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/Variable.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/Expression.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/Expression.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/NamedExpression.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/NamedExpression.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/And.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/And.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Between.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Between.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Equals.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Equals.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Greater.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Greater.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/GreaterEqual.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/GreaterEqual.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Implies.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Implies.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/In.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/In.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/LeftParentheses.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/LeftParentheses.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Less.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Less.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/LessEqual.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/LessEqual.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Not.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Not.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/NotEquals.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/NotEquals.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/OR.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/OR.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/OperationExpression.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/OperationExpression.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/RightParentheses.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/RightParentheses.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/value/ValueExpression.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/value/ValueExpression.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/value/ValueType.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/value/ValueType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/BooleanVeriable.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/BooleanVeriable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/DateTimeVeriable.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/DateTimeVeriable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/DateVeriable.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/DateVeriable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/FloatVeriable.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/FloatVeriable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/IntegerVeriable.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/IntegerVeriable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/RegexVeriable.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/RegexVeriable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/StringVeriable.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/StringVeriable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/VariableExpression.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/VariableExpression.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/VeriableType.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/VeriableType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/operations/Operations.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/operations/Operations.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/parser/ExpressionParser.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/parser/ExpressionParser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jvmrules/util/ValueDataType.java" afterPath="$PROJECT_DIR$/src/main/java/com/jvmrules/util/ValueDataType.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/jvmrules/AppTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/jvmrules/AppTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/jvmrules/test/BetweenOperationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/jvmrules/test/BetweenOperationTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/jvmrules/test/EqualOperationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/jvmrules/test/EqualOperationTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/jvmrules/test/InOperationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/jvmrules/test/InOperationTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/jvmrules/test/NotEqualOperationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/jvmrules/test/NotEqualOperationTest.java" />
     </list>
     <ignored path="engine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,68 +64,7 @@
     <favorites_list name="engine" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="InOperationTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/jvmrules/test/InOperationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="35" column="219" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="219" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValueType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/value/ValueType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="93" column="91" selection-start-line="93" selection-start-column="91" selection-end-line="93" selection-end-column="91" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/jvmrules/AppTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BetweenOperationTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/jvmrules/test/BetweenOperationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="28" column="101" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="101" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Between.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Between.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="In.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/In.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -128,24 +84,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/javarules/exceptions/IllegalPropertyException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javarules/exceptions/IllegalValueException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javarules/expression/operation/OperationExpression.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javarules/expression/Operation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javarules/parser/ExpressionParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javarules/expression/operation/LeftParentheses.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javarules/driver/Main.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/javarule/test/ListValueTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javarules/expression/operation/Less.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javarules/expression/operation/Greater.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javarules/expression/operation/GreaterEqual.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javarules/expression/operation/LessEqual.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javarules/expression/operation/Implies.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javarules/exceptions/IllegalPropertyValueException.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/javarule/test/InOperationTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javarules/expression/veriable/IntegerVeriable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javarules/expression/veriable/FloatVeriable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/javarules/expression/veriable/BooleanVeriable.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javarules/expression/value/ValueType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javarules/expression/veriable/VeriableType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/javarules/api/RuleFactory.java" />
@@ -158,27 +96,45 @@
         <option value="$PROJECT_DIR$/src/test/java/com/javarule/test/ParenthesisTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/javarule/test/EqualityOperationTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Less.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/LessEqual.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Greater.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/GreaterEqual.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/NotEquals.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Equals.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/DateVeriable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/DateTimeVeriable.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/operations/Operations.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/util/ValueDataType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/parser/ExpressionParser.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jvmrules/test/EqualityOperationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jvmrules/test/NotEqualOperationTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/VeriableType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/In.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jvmrules/test/InOperationTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/value/ValueType.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/jvmrules/AppTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Between.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/jvmrules/test/BetweenOperationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/jvmrules/AppTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/Operation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/And.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/NamedExpression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/LeftParentheses.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/value/ValueExpression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Not.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/RightParentheses.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/OR.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Implies.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/Expression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/IntegerVeriable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/BooleanVeriable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/RegexVeriable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/FloatVeriable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/DateVeriable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/DateTimeVeriable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/StringVeriable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/VariableExpression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/VeriableType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/value/ValueType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/LessEqual.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Less.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Greater.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/GreaterEqual.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/NotEquals.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/OperationExpression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Equals.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/EqualityOperationExpression.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/In.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Between.java" />
       </list>
     </option>
   </component>
@@ -199,6 +155,16 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -261,254 +227,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvmrules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JVM-Rules-Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvmrules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JVM-Rules-Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JVM-Rules-Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvmrules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JVM-Rules-Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvmrules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JVM-Rules-Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvmrules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expression" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JVM-Rules-Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvmrules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expression" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="veriable" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JVM-Rules-Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvmrules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expression" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="value" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="engine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JVM-Rules-Core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jvmrules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="expression" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="operation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -529,15 +247,18 @@
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.jvmrules.expression.operation" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jvmrules.expression.operation" />
       <recent name="com.jvmrules.test" />
       <recent name="com.jvmrules.expression.veriable" />
       <recent name="com.javarules.expression.operation" />
       <recent name="com.javarule.test" />
-      <recent name="com.javarules.exceptions" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BetweenOperationTest.testApp">
+  <component name="RunManager" selected="JUnit.AppTest">
     <configuration default="false" name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -616,7 +337,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="ListValueTest.testApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="BetweenOperationTest.testApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.jvmrules.test.*" />
@@ -627,7 +348,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.jvmrules.test" />
-      <option name="MAIN_CLASS_NAME" value="com.jvmrules.test.ListValueTest" />
+      <option name="MAIN_CLASS_NAME" value="com.jvmrules.test.BetweenOperationTest" />
       <option name="METHOD_NAME" value="testApp" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -642,7 +363,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="BetweenOperationTest.testApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="NotEqualOperationTest.testApp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.jvmrules.test.*" />
@@ -653,7 +374,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.jvmrules.test" />
-      <option name="MAIN_CLASS_NAME" value="com.jvmrules.test.BetweenOperationTest" />
+      <option name="MAIN_CLASS_NAME" value="com.jvmrules.test.NotEqualOperationTest" />
       <option name="METHOD_NAME" value="testApp" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1120,15 +841,15 @@
       <item index="1" class="java.lang.String" itemvalue="JUnit.AppTest" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.InOperationTest.testApp" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.EqualOperationTest.testApp" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ListValueTest.testApp" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.BetweenOperationTest.testApp" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.BetweenOperationTest.testApp" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.NotEqualOperationTest.testApp" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BetweenOperationTest.testApp" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ListValueTest.testApp" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AppTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.InOperationTest.testApp" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AppTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BetweenOperationTest.testApp" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.InOperationTest.testApp" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.NotEqualOperationTest.testApp" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.EqualOperationTest.testApp" />
       </list>
     </recent_temporary>
@@ -1155,44 +876,44 @@
       <workItem from="1467370464146" duration="3407000" />
       <workItem from="1467415748233" duration="7000" />
       <workItem from="1467452385783" duration="70000" />
-      <workItem from="1467452739903" duration="7813000" />
+      <workItem from="1467452739903" duration="18711000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest - 2016.07.02 at 13h 23m 48s.xml">
+    <history-entry file="AppTest - 2016.07.02 at 17h 44m 52s.xml">
       <configuration name="AppTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BetweenOperationTest_testApp - 2016.07.02 at 13h 49m 30s.xml">
+    <history-entry file="BetweenOperationTest_testApp - 2016.07.02 at 17h 15m 21s.xml">
       <configuration name="BetweenOperationTest.testApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BetweenOperationTest_testApp - 2016.07.02 at 13h 49m 45s.xml">
+    <history-entry file="BetweenOperationTest_testApp - 2016.07.02 at 17h 43m 16s.xml">
       <configuration name="BetweenOperationTest.testApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BetweenOperationTest_testApp - 2016.07.02 at 13h 50m 57s.xml">
-      <configuration name="BetweenOperationTest.testApp" configurationId="JUnit" />
+    <history-entry file="EqualOperationTest_testApp - 2016.07.02 at 17h 42m 59s.xml">
+      <configuration name="EqualOperationTest.testApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BetweenOperationTest_testApp - 2016.07.02 at 13h 51m 35s.xml">
-      <configuration name="BetweenOperationTest.testApp" configurationId="JUnit" />
+    <history-entry file="InOperationTest_testApp - 2016.07.02 at 17h 15m 16s.xml">
+      <configuration name="InOperationTest.testApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BetweenOperationTest_testApp - 2016.07.02 at 13h 51m 48s.xml">
-      <configuration name="BetweenOperationTest.testApp" configurationId="JUnit" />
+    <history-entry file="InOperationTest_testApp - 2016.07.02 at 17h 43m 10s.xml">
+      <configuration name="InOperationTest.testApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BetweenOperationTest_testApp - 2016.07.02 at 13h 52m 14s.xml">
-      <configuration name="BetweenOperationTest.testApp" configurationId="JUnit" />
+    <history-entry file="NotEqualOperationTest_testApp - 2016.07.02 at 17h 11m 30s.xml">
+      <configuration name="NotEqualOperationTest.testApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BetweenOperationTest_testApp - 2016.07.02 at 13h 52m 24s.xml">
-      <configuration name="BetweenOperationTest.testApp" configurationId="JUnit" />
+    <history-entry file="NotEqualOperationTest_testApp - 2016.07.02 at 17h 12m 20s.xml">
+      <configuration name="NotEqualOperationTest.testApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BetweenOperationTest_testApp - 2016.07.02 at 13h 52m 43s.xml">
-      <configuration name="BetweenOperationTest.testApp" configurationId="JUnit" />
+    <history-entry file="NotEqualOperationTest_testApp - 2016.07.02 at 17h 15m 07s.xml">
+      <configuration name="NotEqualOperationTest.testApp" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ListValueTest_testApp - 2016.07.02 at 13h 24m 07s.xml">
-      <configuration name="ListValueTest.testApp" configurationId="JUnit" />
+    <history-entry file="NotEqualOperationTest_testApp - 2016.07.02 at 17h 43m 06s.xml">
+      <configuration name="NotEqualOperationTest.testApp" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40866000" />
+    <option name="totallyTimeSpent" value="51764000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1213,14 +934,15 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3304721" sideWeight="0.50572246" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.49427754" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44778255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4334764" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1981402" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22031474" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957292" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1231,7 +953,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32957292" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1255,25 +976,25 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/In.java</url>
-          <line>79</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/VariableExpression.java</url>
+          <line>74</line>
           <properties />
-          <option name="timeStamp" value="34" />
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/In.java</url>
-          <line>81</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/VariableExpression.java</url>
+          <line>67</line>
           <properties />
-          <option name="timeStamp" value="35" />
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/In.java</url>
-          <line>85</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/VariableExpression.java</url>
+          <line>65</line>
           <properties />
-          <option name="timeStamp" value="36" />
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="37" />
+      <option name="time" value="43" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1282,222 +1003,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/exceptions/IllegalPropertyException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/exceptions/IllegalValueException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/exceptions/IllegalOperationException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="71" selection-start-line="3" selection-start-column="71" selection-end-line="3" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/exceptions/ExpressionParseException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/Operation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="57" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/LeftParentheses.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="21" column="129" selection-start-line="21" selection-start-column="129" selection-end-line="21" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/driver/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="18" column="74" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/OperationExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="37" column="96" selection-start-line="37" selection-start-column="72" selection-end-line="37" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/value/ValueExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/exceptions/IllegalPropertyValueException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="42" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/IntegerVeriable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/FloatVeriable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/BooleanVeriable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/And.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="20" column="57" selection-start-line="19" selection-start-column="7" selection-end-line="20" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/OR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Not.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Implies.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jvmrules/test/ParenthesisTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="53" column="64" selection-start-line="35" selection-start-column="8" selection-end-line="53" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/api/RuleFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/rule/RuleRegistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="93" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/java/util/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="947" column="7" selection-start-line="947" selection-start-column="7" selection-end-line="947" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Less.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="96" column="119" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="119" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Greater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
-          <folding>
-            <element signature="e#728#729#0" expanded="false" />
-            <element signature="e#776#777#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/GreaterEqual.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="97" column="13" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
-          <folding>
-            <element signature="e#738#739#0" expanded="false" />
-            <element signature="e#797#798#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="35" selection-start-line="4" selection-start-column="4" selection-end-line="6" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/DateVeriable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/DateTimeVeriable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1553,34 +1062,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/LessEqual.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="49" column="61" selection-start-line="47" selection-start-column="13" selection-end-line="49" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/parser/ExpressionParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="58" column="34" selection-start-line="57" selection-start-column="10" selection-end-line="58" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jvmrules/test/NotEqualOperationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jvmrules/test/EqualOperationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1596,70 +1081,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/VeriableType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="101" column="50" selection-start-line="101" selection-start-column="50" selection-end-line="101" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/VariableExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/NotEquals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="96" column="120" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="120" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Equals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="78" column="13" selection-start-line="69" selection-start-column="12" selection-end-line="78" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jvmrules/test/InOperationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="35" column="219" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="219" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/In.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/value/ValueType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="93" column="91" selection-start-line="93" selection-start-column="91" selection-end-line="93" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/jvmrules/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/jvmrules/test/ListValueTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -1668,18 +1089,373 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Between.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jvmrules/test/ParenthesisTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="405">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/Variable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="34" selection-start-line="4" selection-start-column="3" selection-end-line="10" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Operation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/And.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="45" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/LeftParentheses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="10" column="57" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/value/ValueExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Not.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/RightParentheses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/OR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Implies.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="49" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/NamedExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="e#333#334#0" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#418#419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/rule/evaluator/RuleEvaluator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" column="50" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/api/RuleFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/exceptions/InterpretException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/BooleanVeriable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="47" column="10" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/RegexVeriable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="58" column="10" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#401#402#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/FloatVeriable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/DateVeriable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/java/lang/Override.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/IntegerVeriable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="87" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/DateTimeVeriable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="54" column="10" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/StringVeriable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="98" column="10" selection-start-line="98" selection-start-column="10" selection-end-line="98" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/VariableExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="84" column="0" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#569#584#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/veriable/VeriableType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/value/ValueType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Less.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Greater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="18" column="56" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="56" />
+          <folding>
+            <element signature="e#750#751#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/GreaterEqual.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/LessEqual.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/NotEquals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/OperationExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="878">
+          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1122#1123#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Equals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/EqualityOperationExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jvmrules/test/EqualOperationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="35" column="53" selection-start-line="35" selection-start-column="53" selection-end-line="35" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jvmrules/test/NotEqualOperationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/jvmrules/test/BetweenOperationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="28" column="101" selection-start-line="28" selection-start-column="101" selection-end-line="28" selection-end-column="101" />
+        <state relative-caret-position="210">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jvmrules/test/InOperationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/In.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jvmrules/expression/operation/Between.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="56" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/jvmrules/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>

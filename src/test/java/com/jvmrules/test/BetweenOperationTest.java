@@ -3,7 +3,10 @@ package com.jvmrules.test;
 import com.jvmrules.api.RuleFactory;
 import com.jvmrules.exceptions.ExpressionParseException;
 import com.jvmrules.expression.Expression;
-import com.jvmrules.expression.veriable.*;
+import com.jvmrules.expression.veriable.DateTimeVeriable;
+import com.jvmrules.expression.veriable.DateVeriable;
+import com.jvmrules.expression.veriable.FloatVeriable;
+import com.jvmrules.expression.veriable.IntegerVeriable;
 import com.jvmrules.parser.ExpressionParser;
 import com.jvmrules.rule.RuleRegistry;
 import com.jvmrules.rule.evaluator.RuleEvaluator;
@@ -26,7 +29,7 @@ public class BetweenOperationTest extends TestCase {
         types.put("V3", DateVeriable.class);
         types.put("V4", DateTimeVeriable.class);
 
-        String exp="V1 between {2,4} And V2 between {3.1,3.3} V3 between {[12-05-2016],[15-06-2016]} ";
+        String exp = "V1 between {2,4} And V2 between {3.1,3.3} V3 between {[12-05-2016],[15-06-2016]} ";
 
         Expression expression = ExpressionParser.fromString(exp, types);
 
@@ -39,7 +42,7 @@ public class BetweenOperationTest extends TestCase {
         bindings.put("V4", "[28-05-2016-15:30:00]");
 
         RuleEvaluator evaluator = factory.Evaluator;
-        HashMap<Expression,Boolean> results = evaluator.evaluate(rules, bindings);
+        HashMap<Expression, Boolean> results = evaluator.evaluate(rules, bindings);
 
         boolean triggered = results.get(expression);
 

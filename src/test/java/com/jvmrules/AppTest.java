@@ -8,7 +8,7 @@ import org.junit.runners.Suite;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
         EqualOperationTest.class,
-        NotEqualOperationTest.class, InOperationTest.class})
+        NotEqualOperationTest.class, InOperationTest.class, BetweenOperationTest.class, ParenthesisTest.class})
 public class AppTest {
 
 }

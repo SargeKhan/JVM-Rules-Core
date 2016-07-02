@@ -4,7 +4,7 @@ import com.jvmrules.expression.Expression;
 
 import java.util.Map;
 
-public class ValueExpression<T> implements Expression {
+public class ValueExpression<T> extends Expression {
 
 
     public T value;

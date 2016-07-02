@@ -1,11 +1,10 @@
 package com.jvmrules.expression.operation;
 
 import com.jvmrules.exceptions.InterpretException;
-import com.jvmrules.expression.Operation;
 
 import java.util.Map;
 
-public class Implies extends OperationExpression implements Operation {
+public class Implies extends OperationExpression {
     public Implies() {
         super("Implies", "implies", "=>");
     }

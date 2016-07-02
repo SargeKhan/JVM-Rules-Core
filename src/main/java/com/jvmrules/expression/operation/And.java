@@ -1,11 +1,10 @@
 package com.jvmrules.expression.operation;
 
 import com.jvmrules.exceptions.InterpretException;
-import com.jvmrules.expression.Operation;
 
 import java.util.Map;
 
-public class And extends OperationExpression implements Operation {
+public class And extends OperationExpression {
     public And() {
         super("AND", "and", "&&");
     }
